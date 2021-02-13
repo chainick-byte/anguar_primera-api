@@ -1,0 +1,19 @@
+<table class="table table-sm table-dark">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let u of usuario">
+        <th scope="row">{{u.id_usuario}}</th>
+        <td>{{u.nombre}}</td>
+        <td>{{ u.primerApellido }}</td>
+        <td>{{ u.segundoApellido }}</td>
+      </tr>
+      
+    </tbody>
+  </table>
